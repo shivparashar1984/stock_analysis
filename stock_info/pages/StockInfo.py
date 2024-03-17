@@ -82,7 +82,7 @@ def visualize_rsi_divergence(data, rsi_period=14):
     plt.legend()
     st.pyplot(fig)
 
-df = pd.read_csv("symbol.csv")
+df = pd.read_csv("stock_info/symbol.csv")
 tickers = df['Ticker'].values
 stocks = st.sidebar.selectbox('Enter a Stock Symbol', tickers)
 stocks = stocks.upper()
