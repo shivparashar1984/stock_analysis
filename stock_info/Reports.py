@@ -23,7 +23,7 @@ st.markdown("---")
 
 # import nifty 500 stocks
 
-tickers = pd.read_csv("symbol.csv")
+tickers = pd.read_csv("stock_info/symbol.csv")
 
 # Get List of NSE 500
 tickers = tickers['Ticker'].values
